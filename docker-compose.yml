@@ -1,7 +1,7 @@
 services:
   db:
     image: postgres:17.2-alpine3.21
-    container_name: koga_db
+    container_name: boilerplate_db
     environment:
       POSTGRES_USER: ${DATABASE_USER}
       POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
@@ -9,12 +9,12 @@ services:
     ports:
       - "${DATABASE_PORT}:5432"
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - boilerplate_db_data:/var/lib/postgresql/data
     networks:
-      - koga_network
+      - boilerplate_network
 
 networks:
-  koga_network:
+  boilerplate_network:
 
 volumes:
-  db_data:
+  boilerplate_db_data:

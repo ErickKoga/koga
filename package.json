@@ -1,17 +1,17 @@
 {
-  "name": "boilerplate",
+  "name": "koga",
   "private": true,
   "version": "0.1.0",
   "scripts": {
     "build": "pnpm -r --parallel build",
-    "build:api": "pnpm -r --filter @boilerplate/api dev",
-    "build:dev": "pnpm -r --filter @boilerplate/web dev",
+    "build:api": "pnpm -r --filter @koga/api dev",
+    "build:dev": "pnpm -r --filter @koga/web dev",
     "dev": "pnpm -r --parallel dev",
-    "dev:api": "pnpm --filter @boilerplate/api dev",
-    "dev:web": "pnpm --filter @boilerplate/web dev",
+    "dev:api": "pnpm --filter @koga/api dev",
+    "dev:web": "pnpm --filter @koga/web dev",
     "lint": "pnpm -r --parallel lint",
-    "lint:api": "pnpm -r --filter @boilerplate/api dev",
-    "lint:dev": "pnpm -r --filter @boilerplate/web dev"
+    "lint:api": "pnpm -r --filter @koga/api dev",
+    "lint:dev": "pnpm -r --filter @koga/web dev"
   },
   "author": "Erick Koga"
 }
